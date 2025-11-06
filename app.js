@@ -13,7 +13,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(process.env.DBURL)
+mongoose.connect("mongodb+srv://shashankkoti05_db_user:pBW8f2OX0tCauRDc@servicehive.hqs0tie.mongodb.net/?appName=serviceHive")
   .then(() => console.log("DB connected"))
   .catch(err => console.error("DB connection error:", err));
 
